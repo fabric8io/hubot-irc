@@ -13,8 +13,8 @@ WORKDIR /home/hubot
 
 RUN yo hubot --owner="fabric8.io <fabric8@googlegroups.com>" --name="fabric8" --description="Platform manager" --adapter=irc --defaults
 
-ADD fabric8.coffee /home/hubot/scripts/
+ADD start.sh /home/hubot/
 
-CMD /home/hubot/bin/hubot --adapter irc
+CMD /home/hubot/start.sh
 
 
