@@ -6,6 +6,7 @@ RUN yum install -y npm git make
 RUN npm install -g yo generator-hubot
 RUN npm install -g coffee-script
 RUN npm install hubot -g
+RUN npm install --save hubot-pubsub
 
 RUN useradd hubot
 USER hubot
